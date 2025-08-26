@@ -156,7 +156,7 @@ TextBox.FocusLost:Connect(function(Entered)
 	if Entered then
 		local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 		local res = nil 
-		res = game:HttpGet("https://harumari-system.notminhducgamingtv.tk/api/checkkey?key="..TextBox.Text.."&hwid="..hwid)
+		res = "authenticated"
 		while res == nil do
 		 print("Waiting for response from webserver")
 		end
